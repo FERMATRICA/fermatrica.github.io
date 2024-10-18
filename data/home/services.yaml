@@ -3,25 +3,25 @@ id: "features"
 
 content:
   title: "Features"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+  text: "Learm more about FERMATRICA features as econometrics framework and research how it works under the hood"
   cards:
     - image: "images/model.png"
       title: "Model & Optimizer"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      text: "Research two optimization contours in FERMATRICA, the algorithms used, and the transformation functions. Build time series and panel regression models."
       button:
         label: "Learn more"
         url: "/features/model"
 
     - image: "images/reporting.png"
       title: "Analysis & Reporting"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      text: "Create fit-predict and factor decomposition plots, and return on investment curves, as well as optimize the marketing split and budget to meet KPI."
       button:
         label: "Learn more"
         url: "/features/reporting"
 
     - image: "images/customize.png"
       title: "Customizing"
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+      text: "Write your own transformation functions, modify reporting pre-requisites and fork the whole project if some global changes are required."
       button:
         label: "Learn more"
         url: "/features/customize"
