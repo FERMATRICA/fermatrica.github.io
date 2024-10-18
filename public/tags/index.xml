@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on FERMATRICA</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on FERMATRICA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis</title>
+      <link>http://localhost:1313/tags/analysis/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Customising</title>
+      <link>http://localhost:1313/tags/customising/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/customising/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>http://localhost:1313/tags/index/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modeling</title>
+      <link>http://localhost:1313/tags/modeling/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimising</title>
+      <link>http://localhost:1313/tags/optimising/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/optimising/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reporting</title>
+      <link>http://localhost:1313/tags/reporting/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reporting/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+enabled: true
+id: "portfolio"
+
+content:
+  - image: "images/curves.png"
+    pretitle: "Why FERMATRICA?"
+    title: "Philosophy: both friendly and powerfull"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "Read more"
+        url: "#"
+        
+  - image: "images/curves.png"
+    pretitle: "From modeling to reporting"
+    title: "Production ready & Business Ready"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "Read more"
+        url: "#"
+
+  - image: "images/predict.png"
+    pretitle: "Not just an optimiser"
+    title: "Powerfull and flexible"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "Read more"
+        url: "#"
+
+  - image: "images/decompose.png"
+    pretitle: "Data Scientist friendly"
+    title: "Open to use, open to customize"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed euismod quis sit gravida pharetra sit. Cursus vel enim pretium vulputate semper sem elit magna neque. Aliquet adipisc."
+
+    buttons: 
+      - label: "Read more"
+        url: "#"

@@ -1,0 +1,88 @@
+baseURL: "https://fermatrica.github.io/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "FERMATRICA"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "FERMATRICA"
+  description: "Econometrics Framework: powerfull, flexible, open source. Use it as is or contact us for extended support or consulting"
+  images: 
+    - "images/logo-full.png"
+
+  logo: "images/logo.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    site: "https://okkam.group"
+    telegram: "https://t.me/okkaminsights"
+    email: "mailto:alexander.meshkov@okkam.ru"
+
+  community:
+    - name: "Source Code"
+      url: "https://github.com/FERMATRICA"
+      
+    - name: "Docs"
+      url: "https://fermatrica.github.io/fermatrica"
+      
+    - name: "Samples"
+      url: "https://github.com/FERMATRICA/fermatrica/tree/master/samples"
+
+    - name: "License"
+      url: "https://github.com/FERMATRICA/fermatrica?tab=Apache-2.0-1-ov-file#readme"
+
+  copyright: "© 2024 Okkam CS All Rights Reserved"
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    - name: "Features"
+      url: "/#features"
+      weight: 2
+
+    - name: "Docs"
+      url: "https://fermatrica.github.io/fermatrica"
+      weight: 3
+
+    - name: "Samples"
+      url: "https://github.com/FERMATRICA/fermatrica/tree/master/samples"
+      weight: 4
+
+  buttons:
+    - name: "Download"
+      url: "https://github.com/FERMATRICA"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer:
+
+    - name: "Intro"
+      url: "/"
+      weight: 1
+
+    - name: "Model & Optimizer"
+      url: "/features/model"
+      weight: 2
+
+    - name: "Analysis & Report"
+      url: "/features/reporting"
+      weight: 3
+
+    - name: "Customize"
+      url: "/features/customize"
+      weight: 4
+
+taxonomies:
+  series: "series"
+  tags: "tags"

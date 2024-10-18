@@ -1,0 +1,27 @@
+enabled: true
+id: "story"
+
+content:
+  title: "Story"
+
+  list:
+    - text: "The foundation of the project is the extensive experience gained by the Business Data Science teams at OKKAM in building marketing mix models over more than 10 years of work, dating back to the early 2010s. Initially, the solutions were relatively simple, combining linear time series models with a set of nonlinear transformations. As tasks became more complex and expertise grew, the tools also evolved. Progress was made in two main directions:
+
+    - Improvement of mathematical and algorithmic frameworks
+    
+    - Development of analytical and reporting systems
+
+
+    By 2021-2022, it became clear that the research teams needed a fundamentally new tool to consolidate the knowledge of various teams into a single universal framework. The new framework needed to embody two essential qualities: to be as powerful as possible and as user-friendly as necessary. This marked the beginning of the econometric framework FERMATRICA.
+
+
+    The code for the first version of FERMATRICA was written from scratch between 2022 and the first half of 2023. The new framework natively supported time series models and panel models, providing algorithmic optimization of parameters through global and local algorithms for more complex types of models. The reporting system enabled both retro-analysis of historical data and construction of budget option forecasts for future periods, allowing comparisons between them to select the optimal option.
+
+
+    By the end of 2023, FERMATRICA v010 had become the primary tool for building marketing mix models at OKKAM.
+    "
+    
+    - text: "Work on version v020 began immediately after the final adjustments for the first version were completed. Among the most important innovations are further simplification of the framework's package interface for the user-econometrician and comprehensive algorithmic optimization of the split based on a specified budget size and target KPI in reporting. As a result, the reporting system reached its completed form.
+    
+
+    The source code for this version was released in September 2024. Efforts are underway on the following versions - v021, which will address inevitable bugs, and v030, which will introduce new functionality that we will detail after its release."

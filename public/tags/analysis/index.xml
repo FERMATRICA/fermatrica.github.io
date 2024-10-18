@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on FERMATRICA</title>
+    <link>http://localhost:1313/tags/analysis/</link>
+    <description>Recent content in Analysis on FERMATRICA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anaysis &amp; Reporting</title>
+      <link>http://localhost:1313/features/reporting/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/reporting/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/features/reporting/intro.jpg&#34; alt=&#34;Analysis and reporting&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

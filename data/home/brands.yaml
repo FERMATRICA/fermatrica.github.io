@@ -1,0 +1,16 @@
+enabled: true
+id: "brands"
+
+content:
+  title: "For nearly any market"
+  text_items:
+    - "FMCG"
+    - "Pharma"
+    - "Beauty"
+    - "Retail"
+    - "Banking"
+    - "Insurance"
+    - "Digital Services"
+    - "Home Appliance"
+    - "Gadgets"
+    - "...and much more"

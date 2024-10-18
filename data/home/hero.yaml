@@ -1,0 +1,19 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "**FERMATRICA** Econometrics Framework"
+  text:
+      "Build Time series models and Panel models for MMM (Marketing Mix Modeling) and beyond.
+
+      
+      Design both simple models based on the marketing mix standard, allowing for the broadest use of statistics tools, and complex models of arbitrary architecture with multiple levels that provide the most comprehensive description of reality"
+
+  buttonPrimary:
+    label: "Quick start"
+    url: "https://fermatrica.github.io/fermatrica/guides/FERMATRICA_and_MMM_instruction.html"
+
+  buttonSecondary:
+    label: "Source code"
+    url: "https://github.com/FERMATRICA"
+

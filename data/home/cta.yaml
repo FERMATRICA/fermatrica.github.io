@@ -1,0 +1,9 @@
+enabled: true
+id: "cta"
+
+content:
+  title: "Build your model now!"
+  image: "images/cta.jpg"
+  button:
+    label: "Download"
+    url: "https://github.com/FERMATRICA"
