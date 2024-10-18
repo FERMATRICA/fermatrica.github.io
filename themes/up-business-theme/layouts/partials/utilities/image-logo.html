@@ -1,0 +1,4 @@
+{{ $u := .alt }}
+{{ with resources.Get .img }}
+  <img class="" src="{{ .Permalink }}" alt="{{ $u }}" width="{{ .Width }}" height="{{ .Height }}">
+{{ end }}
