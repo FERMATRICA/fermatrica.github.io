@@ -32,7 +32,7 @@ FERMATRICA contains three publicly available reposotories, install all of them f
   pip install [my_fermatrica_folder]/fermatrica_rep
   ```
 
-3. Read [the guide](guides/FERMATRICA_and_MMM_instruction.md) and try the [sample](https://github.com/FERMATRICA/fermatrica/tree/master/samples).
+3. Read [the guide](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html) and try the [sample](https://github.com/FERMATRICA/fermatrica/tree/master/samples).
 
 4. Troubleshooting. Most frequent issue is version incompatibility between Python packages used by FERMATRICA. Check the error message and try to upgrade / downgrade the package in question. If it doesn't help, feel free to raise an issue.
 
@@ -43,7 +43,7 @@ FERMATRICA contains three publicly available reposotories, install all of them f
 
 Guides help you to dive both into marketing mix modeling pipeline and FERMATRICA itself.
 
-- [FERMATRICA Marketing Mix Modeling Intro](guides/FERMATRICA_and_MMM_instruction.md)
+- [FERMATRICA Marketing Mix Modeling Intro](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html)
 
 
 ## API References
