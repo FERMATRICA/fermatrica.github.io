@@ -31,7 +31,7 @@ params:
       url: "https://github.com/FERMATRICA"
       
     - name: "Docs"
-      url: "https://fermatrica.github.io/fermatrica"
+      url: "/docs"
       
     - name: "Samples"
       url: "https://github.com/FERMATRICA/fermatrica/tree/master/samples"
@@ -52,7 +52,7 @@ menus:
       weight: 2
 
     - name: "Docs"
-      url: "https://fermatrica.github.io/fermatrica"
+      url: "/docs"
       weight: 3
 
     - name: "Samples"
@@ -60,7 +60,7 @@ menus:
       weight: 4
 
   buttons:
-    - name: "Download"
+    - name: "Install"
       url: "https://github.com/FERMATRICA"
       weight: 5
       pre: "btn btn-primary text-light"
