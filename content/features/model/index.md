@@ -42,21 +42,21 @@ It may seem that variable transformations are merely a classic case of feature e
 
 FERMATRICA natively supports the following key transformations. A complete list of transformations can be found in the [guide](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html) and [documentation](/fermatrica/api/fermatrica/model/transform.html).
 
-1. Temporal
+1. **Temporal**
    - Lag
    - Moving Average
    - Geometric Adstock
    - Adstock / Weibull Transformation
-2. Saturation
+2. **Saturation**
    - Exponential
    - Logistic Curve
    - Gompertz Curve
    - Power Transformation
-3. Relative and Business-Specific
+3. **Relative and Business-Specific**
    - Share within a Slice
    - Relative Price
    - Age of Entity
-4. Other
+4. **Other**
    - Gaussian
    - Lorentzian
    - Log-Gaussian
