@@ -108,9 +108,34 @@ In addition to complicating the architecture of a specific model, FERMATRICA all
 
 ## 3. Outer countour optimization
 
+The internal contour consists of a linear model (either simple or panel), the solution of which does not pose technical challenges. In this regard, FERMATRICA relies on the well-known package [statsmodels](https://statsmodels.org), using OLS for time series and LME for panel models.
+
+Finding parameters for the external contour is a significantly more complex task. In the simplest case, the data scientist can manually specify them in the model settings based on their own expert knowledge. Since the model settings are stored in a human-readable XLSX config, this can be done using any software that supports editing simple XLSX files, including IDEs with XLSX editing plugins.
+
+A more advanced approach is numerical optimization algorithms. Numerical optimization allows the determination of external contour parameters when expert knowledge is limited or absent, and also enables the testing and/or validation of expert representations of specific transformations.
+
 ### 3.1. Optimization algorithms
 
+FERMATRICA supports both local and global search algorithms. Global search allows for the identification of the most promising areas within the space of possible solutions, while local search achieves an accurate solution but without guarantees of finding the global optimum.
+
+Local algorithms are further divided into gradient and non-gradient types. Gradient algorithms offer better performance but require knowledge of the analytical gradient, which can be challenging for models with a large number of diverse transformations. Currently, FERMATRICA relies on non-gradient algorithms for local searches.
+
+Out of the box, the following algorithms are supported:
+
+1. **Global**
+   - Genetic Algorithm based on the [PyGAD](https://pygad.readthedocs.io) package, with minor technical adjustments.
+
+2. **Local**
+   - Non-gradient COBYLA algorithm from the [NLopt implementation](https://nlopt.readthedocs.io/en/latest/NLopt_Algorithms/#cobyla-constrained-optimization-by-linear-approximations). The NLopt implementation is preferred over the [SciPy implementation](https://docs.scipy.org/doc/scipy/reference/optimize.minimize-cobyla.html) due to its more efficient handling of upper and lower bounds.
+
+Several parameter search strategies for the external contour are possible, depending on modeling style and data volume:
+
+1. **Iterative.** Optimization of individual blocks of parameters, typically logically linked to one another. We start with parameters describing the transformations of the largest factors, then move on to smaller ones, and so forth. This strategy is optimal for large datasets that are difficult to manage with a stochastic approach. The main algorithm used is local.
+
+2. **Stochastic.** This involves performing N independent searches using a global algorithm with all or most of the parameters to be optimized. The resulting solutions are then examined, and one or more are selected for further development using a local algorithm or a global algorithm with narrowed boundaries.
 
 ### 3.2. Scoring
+
+
 
 
