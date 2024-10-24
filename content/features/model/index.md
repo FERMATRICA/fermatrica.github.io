@@ -136,6 +136,29 @@ Several parameter search strategies for the external contour are possible, depen
 
 ### 3.2. Scoring
 
+The standard metric for regression tasks is the mean squared error (MSE) and its derivatives, primarily the more interpretable RMSE and R². However, minimizing forecast error is not the only challenge faced by the data scientist developing a marketing mix model. For instance, it is equally important to make the model interpretable and minimize the effects of multicollinearity, reliably distinguishing the contributions of marketing factors in as detailed a granularity as possible.
+
+FERMATRICA supports optimization based on a composite scoring system of two types:
+
+1. **Standard Scoring.** A linear combination of several metrics normalized to a common scale of 0 to 1, each with its own weight:
+   - R²
+   - Adjusted R²
+   - T-values of regression coefficients
+   - P-values of regression coefficients
+   - Mean RMSE by entity
+   - Sign correctness of regression coefficients
+   - Sign correctness and significance sufficiency (combined)
+   - VIF (Variance Inflation Factor)
+   - Durbin-Watson Test
+
+2. **Custom Scoring.** An arbitrary arithmetic formula derived from components of standard scoring. This is relevant in cases where a different relationship between scoring components is preferred over a linear combination. For example, a combined metric of sign and significance can be used to penalize the base scoring component.
+
+
+
+
+
+
+
 
 
 
