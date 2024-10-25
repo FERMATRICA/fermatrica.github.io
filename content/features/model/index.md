@@ -34,11 +34,11 @@ Let's consider model architectures available in FERMATRICA.
 
 ### 2.1. Variable Transformations
 
-The first aspect to focus on is the transformations of the (independent) variables. Solving a nonlinear regression problem with a large number of parameters and coefficients represents a complex and resource-intensive task. But what if we divide the problem into two parts? Instead of describing nonlinearities directly in the regression equation, we can move them to an external contour that executes prior to the regression build, while keeping a simple linear model — OLS or LME — in the internal contour.
+The first aspect to focus on is the transformations of the (independent) variables. Solving a nonlinear regression problem with a large number of parameters and coefficients represents a complex and resource-intensive task. But what if we divide the problem into two parts? Instead of describing nonlinearities directly in the regression equation, we can move them to an outer contour that executes prior to the regression build, while keeping a simple linear model — OLS or LME — in the internal contour.
 
 ```Raw Data -> Transformed Data -> Linear Model```
 
-It may seem that variable transformations are merely a classic case of feature engineering. Before inclusion in the model, we adjust the raw data to achieve the best scoring results. The main difference is that the transformations used in modeling the marketing mix are parameterized, and the parameter search is a crucial part of model building rather than just preparation — it's part of the model's external contour.
+It may seem that variable transformations are merely a classic case of feature engineering. Before inclusion in the model, we adjust the raw data to achieve the best scoring results. The main difference is that the transformations used in modeling the marketing mix are parameterized, and the parameter search is a crucial part of model building rather than just preparation — it's part of the model's outer contour.
 
 FERMATRICA natively supports the following key transformations. A complete list of transformations can be found in the [guide](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html) and [documentation](/fermatrica/api/fermatrica/model/transform.html).
 
@@ -63,9 +63,9 @@ FERMATRICA natively supports the following key transformations. A complete list 
 
 The framework supports writing custom transformations of (nearly) any complexity, including those containing auxiliary models.
 
-### 2.2. External Contour
+### 2.2. Outer Contour
 
-FERMATRICA views the external contour of the model more broadly than the basic version of marketing mix modeling. If there is a mechanism for parameter tuning for nonlinear transformations, why not apply it to related tasks?
+FERMATRICA views the outer contour of the model more broadly than the basic version of marketing mix modeling. If there is a mechanism for parameter tuning for nonlinear transformations, why not apply it to related tasks?
 
 One of the principal difficulties in marketing mix modeling (MMM) is the inability to combine additive and multiplicative factors. The model is either additive (in standard form) or multiplicative (log-log model). But what to do if marketing activities are additive while seasonality, trends, and price influences are multiplicative (elasticities)? One of the standard approaches suggests removing seasonality from the dependent variable (LHS) before building an additive model. But how can we be sure that the seasonality has been removed correctly if this step precedes the actual modeling?
 
@@ -79,7 +79,7 @@ LHS transformations are parameterized similarly to the transformations of indepe
 
 ### 2.3. Panel Models
 
-Incorporating elasticities into the model removes barriers to actively building panel models. While in time series models, elasticities can often be approximated using additive factors, in a panel model this would effectively mean creating a separate factor for each entity. Moving multipliers to the external contour means that this is no longer necessary.
+Incorporating elasticities into the model removes barriers to actively building panel models. While in time series models, elasticities can often be approximated using additive factors, in a panel model this would effectively mean creating a separate factor for each entity. Moving multipliers to the outer contour means that this is no longer necessary.
 
 Panel models are effective for at least the following tasks:
 
@@ -110,9 +110,9 @@ In addition to complicating the architecture of a specific model, FERMATRICA all
 
 The internal contour consists of a linear model (either simple or panel), the solution of which does not pose technical challenges. In this regard, FERMATRICA relies on the well-known package [statsmodels](https://statsmodels.org), using OLS for time series and LME for panel models.
 
-Finding parameters for the external contour is a significantly more complex task. In the simplest case, the data scientist can manually specify them in the model settings based on their own expert knowledge. Since the model settings are stored in a human-readable XLSX config, this can be done using any software that supports editing simple XLSX files, including IDEs with XLSX editing plugins.
+Finding parameters for the outer contour is a significantly more complex task. In the simplest case, the data scientist can manually specify them in the model settings based on their own expert knowledge. Since the model settings are stored in a human-readable XLSX config, this can be done using any software that supports editing simple XLSX files, including IDEs with XLSX editing plugins.
 
-A more advanced approach is numerical optimization algorithms. Numerical optimization allows the determination of external contour parameters when expert knowledge is limited or absent, and also enables the testing and/or validation of expert representations of specific transformations.
+A more advanced approach is numerical optimization algorithms. Numerical optimization allows the determination of outer contour parameters when expert knowledge is limited or absent, and also enables the testing and/or validation of expert representations of specific transformations.
 
 ### 3.1. Optimization algorithms
 
@@ -128,7 +128,7 @@ Out of the box, the following algorithms are supported:
 2. **Local**
    - Non-gradient COBYLA algorithm from the [NLopt implementation](https://nlopt.readthedocs.io/en/latest/NLopt_Algorithms/#cobyla-constrained-optimization-by-linear-approximations). The NLopt implementation is preferred over the [SciPy implementation](https://docs.scipy.org/doc/scipy/reference/optimize.minimize-cobyla.html) due to its more efficient handling of upper and lower bounds.
 
-Several parameter search strategies for the external contour are possible, depending on modeling style and data volume:
+Several parameter search strategies for the outer contour are possible, depending on modeling style and data volume:
 
 1. **Iterative.** Optimization of individual blocks of parameters, typically logically linked to one another. We start with parameters describing the transformations of the largest factors, then move on to smaller ones, and so forth. This strategy is optimal for large datasets that are difficult to manage with a stochastic approach. The main algorithm used is local.
 
