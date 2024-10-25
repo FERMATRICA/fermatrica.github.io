@@ -63,7 +63,7 @@ FERMATRICA natively supports the following key transformations. A complete list 
 
 The framework supports writing custom transformations of (nearly) any complexity, including those containing auxiliary models.
 
-### 2.2. Outer Contour
+### 2.2. Outer Contour (more)
 
 FERMATRICA views the outer contour of the model more broadly than the basic version of marketing mix modeling. If there is a mechanism for parameter tuning for nonlinear transformations, why not apply it to related tasks?
 
