@@ -163,7 +163,7 @@ FERMATRICA consists of three separate repositories: one for utilities, one for r
 ### 4.2. Documentation
 
 - [Fermatrica MMM guide](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html)
-- [API Reference](/fermatrica/api/fermatrica/model/transform.html)
+- [API Reference](/fermatrica/api/fermatrica.html)
 
 ### 4.3. See also
 
