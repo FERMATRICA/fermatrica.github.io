@@ -158,7 +158,7 @@ FERMATRICA supports optimization based on a composite scoring system of two type
 
 ### 4.1 Source code
 
-FERMATRICA consists of three separate repostiories: one for utilities, one for reporting and one for core functionality (model definition, predicting, optimization). Source code of the core FERMATRICA functionality (model definition, predicting, optimising) is in main [FERMATRICA repo](https://github.com/FERMATRICA/fermatrica).
+FERMATRICA consists of three separate repositories: one for utilities, one for reporting and one for core functionality (model definition, predicting, optimization). Source code of the core FERMATRICA functionality (model definition, predicting, optimising) is in main [FERMATRICA package](https://github.com/FERMATRICA/fermatrica).
 
 ### 4.2. Documentation
 
