@@ -154,7 +154,21 @@ FERMATRICA supports optimization based on a composite scoring system of two type
 2. **Custom Scoring.** An arbitrary arithmetic formula derived from components of standard scoring. This is relevant in cases where a different relationship between scoring components is preferred over a linear combination. For example, a combined metric of sign and significance can be used to penalize the base scoring component.
 
 
+## 4. Source code and documenation
 
+### 4.1 Source code
+
+FERMATRICA consists of three separate repostiories: one for utilities, one for reporting and one for core functionality (model definition, predicting, optimization). Source code of the core FERMATRICA functionality (model definition, predicting, optimising) is in main [FERMATRICA repo](https://github.com/FERMATRICA/fermatrica).
+
+### 4.2. Documentation
+
+- [Fermatrica MMM guide](/fermatrica/guides/FERMATRICA_and_MMM_instruction.html)
+- [API Reference](/fermatrica/api/fermatrica/model/transform.html)
+
+### 4.3. See also
+
+- [Analysis and reporting](/features/reporting)
+- [Customization](/features/customize)
 
 
 
