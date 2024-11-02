@@ -16,7 +16,17 @@ series = ["Features Guide"]
 
 ## 1. Statistical Analysis
 
+When we build a model, we need some guidelines to understand whether our model is good enough or not. The first part of reporting includes metrics and tests to evaluate the quality of a model.
 
+General metrics of model quality on the training sample (R², RMSE, MAPE) provide information about the goodness of fit. The MAPE on the test sample shows the forecast accuracy.
+
+Statistical properties of a model (for time-series models) help to delve deeper into the analysis (stability of the model and correctness of model specification):
+
+- Tests for omitted variables, autocorrelation, stationarity, and normality of residuals;
+- A test for the quality of the forecast on the test sample (test for systematic bias in the forecast);
+- Multicollinearity metrics (VIFs).
+
+It is necessary to sum up all the results of tests and metrics to make a decision on the quality of a model. However, we cannot stop here because we model a real-life process, so we should be sure that the structure of the model is relevant to it (signs of coefficients, transformations and impacts of regressors). Therefore, we should proceed to the second part of the reporting.
 
 ## 2. Business Analysis
 
